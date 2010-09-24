@@ -35,9 +35,9 @@ sub metadata {
         }
         else {
             $ret->{'resources'}->{'bugtracker'}->{'web'}    = $self->web->as_string;
-            $ret->{'resources'}->{'bugtracker'}->{'mailto'} = $self->mailto if $self->mailto;
         }
     }
+    $ret->{'resources'}->{'bugtracker'}->{'mailto'} = $self->mailto if $self->mailto;
 
     return $ret;
 }
